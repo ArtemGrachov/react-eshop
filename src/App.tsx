@@ -1,6 +1,8 @@
 import { ComponentType, lazy, Suspense } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+import { HttpClientProvider } from './providers/http-client';
+
 const PageCatalogue = lazy(() => import('@/pages/Catalogue/Catalogue'));
 
 const router = createBrowserRouter([
@@ -12,7 +14,9 @@ const router = createBrowserRouter([
 
 const App: ComponentType = () => {
   return (
-    <RouterProvider router={router} />
+    <HttpClientProvider>
+      <RouterProvider router={router} />
+    </HttpClientProvider>
   )
 }
 
