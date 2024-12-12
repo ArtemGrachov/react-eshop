@@ -1,4 +1,8 @@
 {
+  "channel": {
+    "title": "React e-Shop",
+    "currency": "USD"
+  },
   "products": [
     {
       "id": 1,
