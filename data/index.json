@@ -1,0 +1,207 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "MacBook Air M1",
+      "description": "A sleek and lightweight laptop with Apple's M1 chip for incredible performance and efficiency.",
+      "price": 99999,
+      "imageUrl": "https://via.placeholder.com/350x300"
+    },
+    {
+      "id": 2,
+      "name": "Dell XPS 13",
+      "description": "Compact and powerful ultrabook with a stunning InfinityEdge display and premium build quality.",
+      "price": 120000,
+      "imageUrl": "https://via.placeholder.com/350x300"
+    },
+    {
+      "id": 3,
+      "name": "Samsung Galaxy S23",
+      "description": "A cutting-edge smartphone with an amazing camera and powerful Snapdragon processor.",
+      "price": 79999,
+      "imageUrl": "https://via.placeholder.com/400x350"
+    },
+    {
+      "id": 4,
+      "name": "Apple iPhone 14",
+      "description": "The latest iPhone with advanced camera features and A16 Bionic chip for superb performance.",
+      "price": 109999,
+      "imageUrl": "https://via.placeholder.com/300x400"
+    },
+    {
+      "id": 5,
+      "name": "Sony WH-1000XM5",
+      "description": "Noise-cancelling wireless headphones with superior sound quality and long-lasting battery life.",
+      "price": 39999,
+      "imageUrl": "https://via.placeholder.com/320x320"
+    },
+    {
+      "id": 6,
+      "name": "Google Pixel 7",
+      "description": "Google's latest smartphone featuring AI-powered camera and seamless Android experience.",
+      "price": 74999,
+      "imageUrl": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 7,
+      "name": "Microsoft Surface Pro 9",
+      "description": "A versatile 2-in-1 laptop with high performance and a detachable keyboard.",
+      "price": 119999,
+      "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 8,
+      "name": "Samsung Galaxy Tab S8",
+      "description": "High-performance tablet with a stunning AMOLED display for work and entertainment.",
+      "price": 64999,
+      "imageUrl": "https://images.unsplash.com/photo-1509420316987-d26a436d34a6?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 9,
+      "name": "Bose QuietComfort Earbuds II",
+      "description": "Premium noise-cancelling earbuds with exceptional sound quality.",
+      "price": 29999,
+      "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 10,
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "description": "A business-grade ultrabook with top-notch security and performance.",
+      "price": 130000,
+      "imageUrl": "https://images.unsplash.com/photo-1611926650077-df358addef7b?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 11,
+      "name": "Asus ROG Zephyrus G14",
+      "description": "A gaming laptop with AMD Ryzen processor and a high-refresh-rate display.",
+      "price": 150000,
+      "imageUrl": "https://images.unsplash.com/photo-1613491302208-813e8e8c1bc8?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 12,
+      "name": "HP Spectre x360",
+      "description": "Convertible laptop with a premium design and all-day battery life.",
+      "price": 105000,
+      "imageUrl": "https://images.unsplash.com/photo-1555255707-dcd9b6f0e84c?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 13,
+      "name": "Sony PS5",
+      "description": "Next-gen gaming console with lightning-fast loading and 4K resolution support.",
+      "price": 49999,
+      "imageUrl": "https://images.unsplash.com/photo-1612965207015-0b81f1a1a191?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 14,
+      "name": "Apple AirPods Pro (2nd Gen)",
+      "description": "Wireless earbuds with noise cancellation and Spatial Audio.",
+      "price": 24999,
+      "imageUrl": "https://images.unsplash.com/photo-1553305152-5fa446b1b379?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 15,
+      "name": "Razer Blade 15",
+      "description": "High-performance gaming laptop with an NVIDIA GeForce RTX GPU and a sleek design.",
+      "price": 189999,
+      "imageUrl": "https://images.unsplash.com/photo-1565808223915-6b63e84bbdc6?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 16,
+      "name": "Canon EOS R6",
+      "description": "Professional-grade mirrorless camera with exceptional image quality and fast autofocus.",
+      "price": 249999,
+      "imageUrl": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 17,
+      "name": "DJI Mini 3 Pro",
+      "description": "Compact and lightweight drone with 4K video recording and obstacle avoidance.",
+      "price": 85999,
+      "imageUrl": "https://images.unsplash.com/photo-1617634357679-41fa6b45cb1b?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 18,
+      "name": "Nintendo Switch OLED",
+      "description": "Handheld gaming console with a vibrant OLED display and enhanced audio.",
+      "price": 34999,
+      "imageUrl": "https://images.unsplash.com/photo-1619966300389-f3e8e3da98ed?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 19,
+      "name": "Fitbit Charge 5",
+      "description": "Advanced fitness tracker with built-in GPS, heart rate monitoring, and stress management tools.",
+      "price": 17999,
+      "imageUrl": "https://images.unsplash.com/photo-1589156287686-0c7c9f9a6040?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 20,
+      "name": "Samsung 32-inch Smart Monitor M7",
+      "description": "Versatile smart monitor with UHD resolution and built-in apps for productivity and entertainment.",
+      "price": 34999,
+      "imageUrl": "https://via.placeholder.com/350x300"
+    },
+    {
+      "id": 21,
+      "name": "Sony Alpha a6400",
+      "description": "Compact mirrorless camera with 4K video and fast autofocus for content creators.",
+      "price": 99999,
+      "imageUrl": "https://images.unsplash.com/photo-1555009611-b40fdbfc06b2?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 22,
+      "name": "HyperX Cloud II Wireless",
+      "description": "Gaming headset with 7.1 surround sound and a comfortable design for long gaming sessions.",
+      "price": 12999,
+      "imageUrl": "https://images.unsplash.com/photo-1592191927520-88cc00f7415c?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 23,
+      "name": "Logitech G Pro X Superlight",
+      "description": "Lightweight wireless gaming mouse with precision HERO sensor and customizable buttons.",
+      "price": 8999,
+      "imageUrl": "https://via.placeholder.com/350x300"
+    },
+    {
+      "id": 24,
+      "name": "Ecovacs Deebot T9",
+      "description": "Smart robotic vacuum cleaner with advanced navigation and mopping capabilities.",
+      "price": 52999,
+      "imageUrl": "https://via.placeholder.com/400x350"
+    },
+    {
+      "id": 25,
+      "name": "LG Ultragear 27GP950",
+      "description": "27-inch 4K UHD gaming monitor with a 144Hz refresh rate and vibrant HDR support.",
+      "price": 49999,
+      "imageUrl": "https://images.unsplash.com/photo-1623791167056-091bfae09418?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 26,
+      "name": "Apple Watch Series 8",
+      "description": "Advanced smartwatch with health monitoring and seamless integration with iPhone.",
+      "price": 42999,
+      "imageUrl": "https://images.unsplash.com/photo-1535905748047-14b12f2c12e7?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 27,
+      "name": "Roku Streaming Stick 4K",
+      "description": "Compact streaming device with 4K HDR support and voice search.",
+      "price": 4999,
+      "imageUrl": "https://via.placeholder.com/320x320"
+    },
+    {
+      "id": 28,
+      "name": "Corsair K95 RGB Platinum XT",
+      "description": "Mechanical gaming keyboard with customizable RGB lighting and macro keys.",
+      "price": 19999,
+      "imageUrl": "https://images.unsplash.com/photo-1564866694474-f8e3b7f6cd04?crop=entropy&cs=tinysrgb&w=400&h=300"
+    },
+    {
+      "id": 29,
+      "name": "Sennheiser Momentum 4 Wireless",
+      "description": "Premium over-ear headphones with superior sound quality and 60-hour battery life.",
+      "price": 37999,
+      "imageUrl": "https://images.unsplash.com/photo-1601924582978-8bc96ed84589?crop=entropy&cs=tinysrgb&w=400&h=300"
+    }
+  ]
+}
