@@ -1,10 +1,18 @@
-import { ComponentType } from 'react';
+import { ComponentType, lazy, Suspense } from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+const PageCatalogue = lazy(() => import('@/pages/Catalogue/Catalogue'));
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Suspense><PageCatalogue /></Suspense>,
+  },
+]);
 
 const App: ComponentType = () => {
   return (
-    <div>
-      <h1>Hello, world!</h1>
-    </div>
+    <RouterProvider router={router} />
   )
 }
 
