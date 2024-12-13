@@ -5,5 +5,16 @@
 }
 
 .container {
-  @include layout.container;
+  @include layout.container(500px);
+}
+
+.row {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid lightgrey;
+
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
 }
