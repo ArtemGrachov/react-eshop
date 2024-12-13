@@ -1,0 +1,15 @@
+@use '/src/styles/mixins/layout.scss' as layout;
+
+.host {
+  background: black;
+  color: white;
+  padding: 12px 0;
+}
+
+.container {
+  @include layout.container;
+}
+
+.title {
+  margin: 0;
+}
