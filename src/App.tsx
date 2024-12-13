@@ -8,6 +8,7 @@ import Header from '@/components/layout/Header/Header';
 
 const PageCatalogue = lazy(() => import('@/pages/Catalogue/Catalogue'));
 const PageProduct = lazy(() => import('@/pages/Product/Product'));
+const PageSubmit = lazy(() => import('@/pages/Checkout/Checkout'));
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     path: '/product/:id',
     element: <Suspense><PageProduct /></Suspense>,
   },
+  {
+    path: '/checkout',
+    element: <Suspense><PageSubmit /></Suspense>
+  }
 ]);
 
 const App: ComponentType = () => {

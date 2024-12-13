@@ -24,6 +24,10 @@ export const useCartService = (): ICartContext => {
     dispatch({ type: EActions.REMOVE_ITEM, productId });
   }
 
+  const clear = () => {
+    dispatch({ type: EActions.CLEAR });
+  }
+
   useEffect(() => {
     if (state.initStatus === EStatus.INIT) {
       try {
@@ -41,5 +45,6 @@ export const useCartService = (): ICartContext => {
     state,
     addItem,
     removeItem,
+    clear,
   };
 }

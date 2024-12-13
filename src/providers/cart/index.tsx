@@ -6,8 +6,9 @@ import { defaultState } from './state';
 
 export const CartContext = createContext<ICartContext>({
   state: defaultState(),
-  addItem() {},
-  removeItem() {},
+  async addItem() {},
+  async removeItem() {},
+  clear() {},
 });
 
 export const useCartContext = () => useContext(CartContext);

@@ -1,0 +1,6 @@
+@use '/src/styles/mixins/buttons.scss' as buttons;
+
+.submit {
+  @include buttons.button-default(('set-color': true));
+  @include buttons.button-success-colors;
+}

@@ -39,12 +39,20 @@
   color: white;
 }
 
-@mixin button-default {
+@mixin button-success-colors {
+  background: green;
+  color: white;
+}
+
+@mixin button-default($options: ()) {
   @include button-base;
   @include button-default-shape;
   @include button-default-typography;
   @include button-default-size;
-  @include button-default-colors;
+
+  @if map-get($options, 'set-color') != true {
+    @include button-default-colors;
+  }
 }
 
 @mixin button-icon {

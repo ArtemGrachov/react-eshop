@@ -24,6 +24,12 @@ export const reducer = (state = defaultState(), action: Actions): ICartState => 
         items: action.items,
       }
     }
+    case EActions.CLEAR: {
+      return {
+        ...state,
+        items: [],
+      };
+    }
     default: {
       return state;
     }
