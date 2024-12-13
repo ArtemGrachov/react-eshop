@@ -16,13 +16,15 @@
 }
 
 @mixin button-default-shape {
-  padding: 8px 16px;
+  padding: 16px 24px;
   border-radius: 4px;
 }
 
 @mixin button-default-typography {
   font-weight: bold;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 
 @mixin button-default-size {
