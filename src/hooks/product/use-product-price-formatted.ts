@@ -4,8 +4,8 @@ import type { IProduct } from '@/types/models/product.interface';
 
 import { useProductPrice } from './use-product-price';
 
-export const useProductPriceFormatted = (product: IProduct) => {
+export const useProductPriceFormatted = (product?: IProduct | null) => {
   const price = useProductPrice(product);
 
-  return useFormatPrice(price);
+  return useFormatPrice(price ?? 0);
 };

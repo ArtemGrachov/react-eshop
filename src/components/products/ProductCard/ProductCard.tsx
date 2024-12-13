@@ -25,7 +25,7 @@ const ProductCard: ComponentType<IProps> = ({ product }) => {
       <h3>
         {name}
       </h3>
-      <p>
+      <p className={styles.price}>
         {price}
       </p>
     </article>
