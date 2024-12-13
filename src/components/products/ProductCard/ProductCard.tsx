@@ -1,8 +1,11 @@
 import { ComponentType } from 'react';
 
+
 import { useProductName } from '@/hooks/product/use-product-name';
 import { useProductPriceFormatted } from '@/hooks/product/use-product-price-formatted';
 import { useProductImageUrl } from '@/hooks/product/use-product-image-url';
+
+import AddToCart from '@/components/cart/AddToCart/AddToCart';
 
 import type { IProduct } from '@/types/models/product.interface';
 
@@ -28,6 +31,7 @@ const ProductCard: ComponentType<IProps> = ({ product }) => {
       <p className={styles.price}>
         {price}
       </p>
+      <AddToCart product={product} />
     </article>
   )
 }

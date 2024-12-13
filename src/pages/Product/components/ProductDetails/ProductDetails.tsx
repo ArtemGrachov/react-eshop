@@ -3,6 +3,8 @@ import clsx from 'clsx';
 
 import { useProduct } from '@/providers/product/hooks/use-product';
 
+import AddToCart from '@/components/cart/AddToCart/AddToCart';
+
 import { useProductName } from '@/hooks/product/use-product-name';
 import { useProductPriceFormatted } from '@/hooks/product/use-product-price-formatted';
 import { useProductImageUrl } from '@/hooks/product/use-product-image-url';
@@ -37,6 +39,7 @@ const ProductDetails: ComponentType = () => {
             <p>
               {description}
             </p>
+            {product && <AddToCart product={product} />}
           </div>
         </div>
       </div>
