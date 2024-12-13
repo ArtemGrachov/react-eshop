@@ -15,6 +15,7 @@ const PageSubmit = lazy(() => import('@/pages/Checkout/Checkout'));
 const Root: ComponentType = () => {
   return (
     <>
+      <Header />
       <Outlet />
       <ModalRoot />
     </>
@@ -47,7 +48,6 @@ const App: ComponentType = () => {
     <HttpClientProvider>
       <CartProvider>
         <ModalProvider>
-          <Header />
           <RouterProvider router={router} />
         </ModalProvider>
       </CartProvider>
