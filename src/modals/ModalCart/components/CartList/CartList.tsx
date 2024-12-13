@@ -2,7 +2,7 @@ import { ComponentType } from 'react';
 
 import { IProduct } from '@/types/models/product.interface';
 
-import CheckoutItem from '../CheckoutItem/CheckoutItem';
+import CartItem from '../CartItem/CartItem';
 
 import styles from './styles.module.scss';
 
@@ -10,18 +10,18 @@ interface IProps {
   items?: IProduct[];
 }
 
-const CheckoutList: ComponentType<IProps> = ({ items }) => {
+const CartList: ComponentType<IProps> = ({ items }) => {
   items = items ?? [];
 
   return (
     <ul className={styles.list}>
       {items.map((item, index) => (
         <li key={item.id + '_' + index} className={styles.item}>
-          <CheckoutItem item={item} />
+          <CartItem item={item} />
         </li>
       ))}
     </ul>
   )
 }
 
-export default CheckoutList;
+export default CartList;
