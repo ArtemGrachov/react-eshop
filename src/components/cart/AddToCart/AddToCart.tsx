@@ -1,10 +1,13 @@
 import { ComponentType } from 'react';
+import clsx from 'clsx';
 
 import { useAddToCart } from '@/providers/cart/hooks/use-add-to-cart';
 
 import { useProductName } from '@/hooks/product/use-product-name';
 
 import type { IProduct } from '@/types/models/product.interface';
+
+import styles from './styles.module.scss';
 
 interface IProps {
   product: IProduct
@@ -21,7 +24,11 @@ const AddToCart: ComponentType<IProps> = ({ product, className }) => {
   }
 
   return (
-    <button type="button" className={className} onClick={addToCartHandler}>
+    <button
+      type="button"
+      className={clsx(className, styles.host)}
+      onClick={addToCartHandler}
+    >
       Add to cart
     </button>
   )

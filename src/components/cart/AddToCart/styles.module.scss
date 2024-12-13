@@ -1,0 +1,5 @@
+@use '/src/styles/mixins/buttons.scss' as buttons;
+
+.host {
+  @include buttons.button-default;
+}

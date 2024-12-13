@@ -1,0 +1,61 @@
+@use '/src/styles/variables.scss' as variables;
+
+@mixin button-base {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: variables.$transition;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@mixin button-default-shape {
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+@mixin button-default-typography {
+  font-weight: bold;
+  text-align: center;
+}
+
+@mixin button-default-size {
+  min-width: 200px;
+  max-width: 100%;
+}
+
+@mixin button-size-block {
+  width: 100%;
+}
+
+@mixin button-default-colors {
+  background: black;
+  color: white;
+}
+
+@mixin button-default {
+  @include button-base;
+  @include button-default-shape;
+  @include button-default-typography;
+  @include button-default-size;
+  @include button-default-colors;
+}
+
+@mixin button-icon {
+  @include button-base;
+  @include button-default-typography;
+  @include button-default-size;
+  @include button-default-colors;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
