@@ -11,6 +11,7 @@ import { formValueToRequest } from '@/providers/form-products/utils/form-value-t
 
 import ProductsList from '@/components/products/ProductsList/ProductsList';
 import CataloguePagination from './components/CataloguePagination/CataloguePagination';
+import CatalogueSorting from './components/CatalogueSorting/CatalogueSorting';
 
 import styles from './styles.module.scss';
 
@@ -43,6 +44,7 @@ const PageCatalogue: ComponentType = () => {
         <h2>
           Catalogue
         </h2>
+        <CatalogueSorting />
         <ProductsList
           products={products}
         />
