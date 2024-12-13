@@ -7,4 +7,17 @@
   ));
   @include buttons.button-light-colors;
   @include buttons.button-small;
+  position: relative;
+}
+
+.counter {
+  background: red;
+  position: absolute;
+  top: -0.5em;
+  right: -0.5em;
+  min-width: 1.5em;
+  height: 1.5em;
+  padding: 2px;
+  color: white;
+  border-radius: 50%;
 }
