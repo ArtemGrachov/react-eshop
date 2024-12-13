@@ -13,7 +13,7 @@ interface IProps {
 }
 
 const AddToCart: ComponentType<IProps> = ({ product, className }) => {
-  const { addToCartHandler } = useAddToCartButton({ product })
+  const { addToCartHandler, isProcessing } = useAddToCartButton({ product })
 
   return (
     <button
@@ -21,7 +21,7 @@ const AddToCart: ComponentType<IProps> = ({ product, className }) => {
       className={clsx(className, styles.host)}
       onClick={addToCartHandler}
     >
-      +
+      {isProcessing ? '...' : '+'}
     </button>
   )
 }
