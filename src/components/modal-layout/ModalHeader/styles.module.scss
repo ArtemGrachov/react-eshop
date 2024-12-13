@@ -1,0 +1,17 @@
+@use '/src/styles/mixins/buttons.scss' as buttons;
+
+.host {
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 16px;
+}
+
+.close {
+  @include buttons.button-icon;
+  @include buttons.button-light-colors;
+}
