@@ -16,8 +16,11 @@ const PageCatalogue: ComponentType = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.page}>
       <div className={styles.container}>
+        <h2>
+          Catalogue
+        </h2>
         <ProductsList
           products={products}
         />
