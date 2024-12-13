@@ -1,4 +1,7 @@
 import { ComponentType } from 'react';
+import { Link } from 'react-router-dom';
+
+import { EModalKeys } from '@/constants/modals/modal-keys';
 
 import { useCartItems } from '@/providers/cart/hooks/use-cart-items';
 import { useModalContext } from '@/providers/modals';
@@ -11,7 +14,6 @@ import CartList from './components/CartList/CartList';
 import CartSummary from './components/CartSummary/CartSummary';
 
 import styles from './styles.module.scss';
-import { EModalKeys } from '../../constants/modals/modal-keys';
 
 const ModalCart: ComponentType = () => {
   const items = useCartItems();
@@ -31,6 +33,13 @@ const ModalCart: ComponentType = () => {
         <div className={styles.content}>
           <CartList items={items} />
           <CartSummary />
+          <Link
+            to="/checkout"
+            className={styles.checkoutLink}
+            onClick={closeHandler}
+          >
+            Checkout
+          </Link>
         </div>
       </ModalWindow>
     </ModalWrapper>

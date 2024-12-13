@@ -1,3 +1,10 @@
+@use '/src/styles/mixins/buttons.scss' as buttons;
+
 .content {
   padding: 16px;
+}
+
+.checkoutLink {
+  @include buttons.button-default(('set-color': true));
+  @include buttons.button-success-colors;
 }

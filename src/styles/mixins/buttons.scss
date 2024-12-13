@@ -2,10 +2,16 @@
 @use '/src/styles/variables.scss' as variables;
 
 @mixin button-base {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
   border: none;
   padding: 0;
   cursor: pointer;
   transition: variables.$transition;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.75;
@@ -23,7 +29,6 @@
 
 @mixin button-default-typography {
   font-weight: bold;
-  text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
@@ -86,10 +91,6 @@
   @include button-base;
   @include button-default-typography;
   @include button-default-colors;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   padding: 0;
   width: 32px;
   height: 32px;
