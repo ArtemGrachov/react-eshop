@@ -10,7 +10,7 @@ import { IProductsListResponse } from '@/types/api/products/products-list.interf
 const CataloguePagination: ComponentType = () => {
   const { state } = useProductListContext();
 
-  const { form } = useFormProductsContext();
+  const { form, update } = useFormProductsContext();
   const { watch } = form;
 
   const currentPage = watch('page');
@@ -19,6 +19,11 @@ const CataloguePagination: ComponentType = () => {
     return state.data ?? {} as Partial<IProductsListResponse>;
   }, [state]);
 
+  const navigationHandler = (page: number) => {
+    form.setValue('page', page);
+    update();
+  }
+
   return (
     <Pagination
       first={first}
@@ -26,6 +31,7 @@ const CataloguePagination: ComponentType = () => {
       next={next}
       prev={prev}
       current={currentPage}
+      onNavigate={navigationHandler}
     />
   )
 }
