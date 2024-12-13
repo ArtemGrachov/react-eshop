@@ -1,3 +1,7 @@
+.host {
+  position: relative;
+}
+
 .imageWrap {
   padding-top: 100%;
   position: relative;
@@ -20,4 +24,22 @@
 .price {
   font-weight: bold;
   color: red;
+}
+
+.link {
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+}
+
+.addToCart {
+  position: relative;
+  z-index: 1;
 }

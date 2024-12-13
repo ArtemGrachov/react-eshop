@@ -8,9 +8,10 @@ import type { IProduct } from '@/types/models/product.interface';
 
 interface IProps {
   product: IProduct
+  className?: string
 }
 
-const AddToCart: ComponentType<IProps> = ({ product }) => {
+const AddToCart: ComponentType<IProps> = ({ product, className }) => {
   const addToCart = useAddToCart();
   const name = useProductName(product);
 
@@ -20,7 +21,7 @@ const AddToCart: ComponentType<IProps> = ({ product }) => {
   }
 
   return (
-    <button type="button" onClick={addToCartHandler}>
+    <button type="button" className={className} onClick={addToCartHandler}>
       Add to cart
     </button>
   )
