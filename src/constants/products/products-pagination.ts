@@ -1,1 +1,1 @@
-export const PRODUCTS_PER_PAGE = 5;
+export const PRODUCTS_PER_PAGE = 8;
