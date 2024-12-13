@@ -3,6 +3,7 @@ import { ComponentType } from 'react'
 import { CheckoutProvider } from '@/providers/checkout';
 
 import CheckoutSubmit from './components/CheckoutSubmit/CheckoutSubmit';
+import CheckoutSummary from './components/CheckoutSummary/CheckoutSummary';
 
 import styles from './styles.module.scss';
 
@@ -13,6 +14,7 @@ const PageCheckout: ComponentType = () => {
         <h2>
           Checkout
         </h2>
+        <CheckoutSummary />
         <CheckoutSubmit />
       </div>
     </main>
