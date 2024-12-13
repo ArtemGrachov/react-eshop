@@ -6,6 +6,8 @@ import { useProductPriceFormatted } from '@/hooks/product/use-product-price-form
 import { useProductImageUrl } from '@/hooks/product/use-product-image-url';
 import { useProductLink } from '@/hooks/product/use-product-link';
 
+import RemoveFromCart from '@/components/cart/RemoveFromCart/RemoveFromCart';
+
 import { IProduct } from '@/types/models/product.interface';
 
 import styles from './styles.module.scss';
@@ -31,6 +33,7 @@ const CheckoutItem: ComponentType<IProps> = ({ item }) => {
       <p className={styles.price}>
         {price}
       </p>
+      <RemoveFromCart product={item} />
     </div>
   )
 }

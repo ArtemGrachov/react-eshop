@@ -37,24 +37,43 @@
   width: 100%;
 }
 
+@mixin button-small-size {
+  font-size: 14px;
+}
+
+@mixin button-small-shape {
+  padding: 4px 8px;
+  border-radius: 2px;
+  min-width: 80px;
+}
+
 @mixin button-default-colors {
   background: black;
   color: white;
 }
 
 @mixin button-success-colors {
-  background: green;
+  background: map.get(variables.$colors, 'success');
+  color: white;
+}
+
+@mixin button-danger-colors {
+  background: map.get(variables.$colors, 'danger');
   color: white;
 }
 
 @mixin button-default($options: ()) {
   @include button-base;
-  @include button-default-shape;
   @include button-default-typography;
   @include button-default-size;
 
   @if map.get($options, 'set-color') != true {
     @include button-default-colors;
+  }
+
+  @if map.get($options, 'set-size') != true {
+    @include button-default-size;
+    @include button-default-shape;
   }
 }
 
@@ -69,4 +88,9 @@
   padding: 0;
   width: 32px;
   height: 32px;
+}
+
+@mixin button-small {
+  @include button-small-size;
+  @include button-small-shape;
 }

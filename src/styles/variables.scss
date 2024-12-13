@@ -1,1 +1,13 @@
+@use 'sass:map';
+
 $transition: 300ms;
+
+$base-colors: (
+  'red': red,
+  'green': green,
+);
+
+$colors: (
+  'danger': map.get($base-colors, 'red'),
+  'success': map.get($base-colors, 'green'),
+);

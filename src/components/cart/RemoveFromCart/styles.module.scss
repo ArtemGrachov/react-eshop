@@ -1,0 +1,10 @@
+@use '/src/styles/mixins/buttons.scss' as buttons;
+
+.host {
+  @include buttons.button-default((
+    'set-color': true,
+    'set-size': true,
+  ));
+  @include buttons.button-danger-colors;
+  @include buttons.button-small;
+}
