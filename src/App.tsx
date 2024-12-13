@@ -3,8 +3,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { HttpClientProvider } from '@/providers/http-client';
 import { CartProvider } from '@/providers/cart';
+import { ModalProvider } from '@/providers/modals';
 
 import Header from '@/components/layout/Header/Header';
+import ModalRoot from '@/modals/ModalRoot/ModalRoot';
 
 const PageCatalogue = lazy(() => import('@/pages/Catalogue/Catalogue'));
 const PageProduct = lazy(() => import('@/pages/Product/Product'));
@@ -29,8 +31,11 @@ const App: ComponentType = () => {
   return (
     <HttpClientProvider>
       <CartProvider>
-        <Header />
-        <RouterProvider router={router} />
+        <ModalProvider>
+          <Header />
+          <RouterProvider router={router} />
+          <ModalRoot />
+        </ModalProvider>
       </CartProvider>
     </HttpClientProvider>
   )

@@ -62,6 +62,11 @@
   color: white;
 }
 
+@mixin button-light-colors {
+  background: white;
+  color: black;
+}
+
 @mixin button-default($options: ()) {
   @include button-base;
   @include button-default-typography;
