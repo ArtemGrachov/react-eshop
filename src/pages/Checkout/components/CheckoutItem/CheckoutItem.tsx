@@ -1,10 +1,7 @@
 import { ComponentType } from 'react';
 import { Link } from 'react-router-dom';
 
-import { useProductName } from '@/hooks/product/use-product-name';
-import { useProductPriceFormatted } from '@/hooks/product/use-product-price-formatted';
-import { useProductImageUrl } from '@/hooks/product/use-product-image-url';
-import { useProductLink } from '@/hooks/product/use-product-link';
+import { useCartItem } from '@/hooks/cart/use-cart-item';
 
 import RemoveFromCart from '@/components/cart/RemoveFromCart/RemoveFromCart';
 
@@ -17,10 +14,7 @@ interface IProps {
 }
 
 const CheckoutItem: ComponentType<IProps> = ({ item }) => {
-  const name = useProductName(item);
-  const price = useProductPriceFormatted(item);
-  const imageUrl = useProductImageUrl(item);
-  const link = useProductLink(item);
+  const { name, price, imageUrl, link } = useCartItem(item);
 
   return (
     <div className={styles.host}>
