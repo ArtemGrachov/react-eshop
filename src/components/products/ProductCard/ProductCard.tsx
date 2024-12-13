@@ -6,7 +6,7 @@ import { useProductPriceFormatted } from '@/hooks/product/use-product-price-form
 import { useProductImageUrl } from '@/hooks/product/use-product-image-url';
 import { useProductLink } from '@/hooks/product/use-product-link';
 
-import AddToCart from '@/components/cart/AddToCart/AddToCart';
+import AddToCartIcon from '@/components/cart/AddToCartIcon/AddToCartIcon';
 
 import type { IProduct } from '@/types/models/product.interface';
 
@@ -27,18 +27,22 @@ const ProductCard: ComponentType<IProps> = ({ product }) => {
       <picture className={styles.imageWrap}>
         <img src={imageUrl} alt={name}  className={styles.image} />
       </picture>
-      <h3>
-        <Link to={link} className={styles.link}>
-          {name}
-        </Link>
-      </h3>
-      <p className={styles.price}>
-        {price}
-      </p>
-      <AddToCart
-        className={styles.addToCart}
-        product={product}
-      />
+      <div className={styles.row}>
+        <div className={styles.details}>
+          <h3>
+            <Link to={link} className={styles.link}>
+              {name}
+            </Link>
+          </h3>
+          <p className={styles.price}>
+            {price}
+          </p>
+        </div>
+        <AddToCartIcon
+          className={styles.addToCart}
+          product={product}
+        />
+      </div>
     </article>
   )
 }

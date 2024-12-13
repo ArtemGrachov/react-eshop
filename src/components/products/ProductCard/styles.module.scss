@@ -1,5 +1,3 @@
-@use '/src/styles/mixins/buttons.scss' as buttons;
-
 .host {
   position: relative;
 }
@@ -23,6 +21,13 @@
   object-fit: contain;
 }
 
+.row {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .price {
   font-weight: bold;
   color: red;
@@ -42,7 +47,7 @@
 }
 
 .addToCart {
-  @include buttons.button-size-block;
   position: relative;
   z-index: 1;
+  flex: 0 0 auto;
 }

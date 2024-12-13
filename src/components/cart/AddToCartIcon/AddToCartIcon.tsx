@@ -21,7 +21,7 @@ const AddToCart: ComponentType<IProps> = ({ product, className }) => {
       className={clsx(className, styles.host)}
       onClick={addToCartHandler}
     >
-      Add to cart
+      +
     </button>
   )
 }
