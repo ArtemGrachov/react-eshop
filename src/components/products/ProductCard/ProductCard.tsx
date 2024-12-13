@@ -6,6 +6,8 @@ import { useProductImageUrl } from '@/hooks/product/use-product-image-url';
 
 import type { IProduct } from '@/types/models/product.interface';
 
+import styles from './styles.module.scss';
+
 interface IProps {
   product: IProduct;
 }
@@ -17,8 +19,8 @@ const ProductCard: ComponentType<IProps> = ({ product }) => {
 
   return (
     <article>
-      <picture>
-        <img src={imageUrl} alt={name} />
+      <picture className={styles.imageWrap}>
+        <img src={imageUrl} alt={name}  className={styles.image} />
       </picture>
       <h3>
         {name}

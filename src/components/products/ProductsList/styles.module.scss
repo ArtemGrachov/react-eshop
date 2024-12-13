@@ -1,0 +1,16 @@
+@use '/src/styles/mixins/grid.scss' as grid;
+
+$gap: 24px;
+
+.list {
+  @include grid.grid-row($gap);
+  list-style: none;
+  padding: 0;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.item {
+  @include grid.grid-col($gap);
+  width: 25%;
+}

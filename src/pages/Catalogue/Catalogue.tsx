@@ -5,6 +5,8 @@ import { useProducts } from '@/providers/product-list/hooks/use-products';
 
 import ProductsList from '@/components/products/ProductsList/ProductsList';
 
+import styles from './styles.module.scss';
+
 const PageCatalogue: ComponentType = () => {
   const { getProducts } = useProductListContext();
   const products = useProducts();
@@ -15,9 +17,11 @@ const PageCatalogue: ComponentType = () => {
 
   return (
     <div>
-      <ProductsList
-        products={products}
-      />
+      <div className={styles.container}>
+        <ProductsList
+          products={products}
+        />
+      </div>
     </div>
   )
 }

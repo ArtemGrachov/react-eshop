@@ -1,6 +1,10 @@
 import { ComponentType } from 'react';
-import { IProduct } from '../../../types/models/product.interface';
-import ProductCard from '../ProductCard/ProductCard';
+
+import ProductCard from '@/components/products/ProductCard/ProductCard';
+
+import type { IProduct } from '@/types/models/product.interface';
+
+import styles from './styles.module.scss';
 
 interface IProps {
   products?: IProduct[];
@@ -11,8 +15,12 @@ const ProductsList: ComponentType<IProps> = ({ products }) => {
 
   return (
     <div>
-      <ul>
-        {products.map(product => <ProductCard key={product.id} product={product} />)}
+      <ul className={styles.list}>
+        {products.map(product => (
+          <li key={product.id} className={styles.item}>
+            <ProductCard product={product} />
+          </li>
+        ))}
       </ul>
     </div>
   )
